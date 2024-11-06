@@ -1,12 +1,27 @@
 package com.example.produtosapi.model;
 
-// POJO -> Plain Old Java Object
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
 
+// POJO -> Plain Old Java Object
+@Entity
+@Table(name = "produto") // É opcional quando se tem o mesmo nome da tabela
 public class Produto {
 
+    // Não é necessário colocar o Column quando é o mesmo nome do banco
+    @Id
+    @Column(name = "id")
     private String id;
+
+    @Column(name = "nome")
     private String nome;
+
+    @Column(name = "descricao")
     private String descricao;
+
+    @Column(name = "preco")
     private Double preco;
 
     public String getId() {
