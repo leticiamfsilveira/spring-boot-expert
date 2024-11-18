@@ -1,4 +1,4 @@
-package com.example.arquitetura_spring;
+package com.example.arquiteturaspring;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
